@@ -1,18 +1,16 @@
 /* Global styles */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem;
 }
 
 /* Container styles */
-
 .container {
-  max-width: 80%; /* adjust this value to control the max width */
+  max-width: 80%; /* Adjust this value to control the max width */
   margin: 0 auto;
   padding: 1rem;
-  background-color: rgba(228, 218, 218, 0.304);
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.125);
+  background-color: rgba(228, 218, 218, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.125);
   border-radius: 7.5px;
   display: flex;
   flex-direction: column;
@@ -20,50 +18,51 @@ body {
 }
 
 /* Input styles */
-
-input[type="text"], select, input[type="number"], input[type="submit"] {
+input[type="text"],
+select,
+input[type="number"],
+input[type="submit"] {
   margin-bottom: 1rem;
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid rgb(207, 201, 201);
+  border: 1px solid #cfc9c9;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 1rem;
 }
 
 input[type="submit"] {
-  background-color: rgb(6, 190, 73);
+  background-color: #06be49;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(6, 171, 67);
+  background-color: #06ab43;
 }
 
 /* Table styles */
-
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
 }
 
-th, td {
-  border: 1px solid rgb(207, 201, 201);
+th,
+td {
+  border: 1px solid #cfc9c9;
   padding: 0.5rem;
   text-align: left;
   font-size: 0.9rem;
 }
 
 th {
-  background-color: rgb(6, 190, 73);
-  color: white;
+  background-color: #06be49;
+  color: #fff;
 }
 
 /* Flexbox grid for responsive layout */
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +75,6 @@ th {
 }
 
 /* Media queries for fine-tuning */
-
 @media (min-width: 40rem) {
   .grid > * {
     flex-basis: 50%;

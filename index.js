@@ -7,15 +7,15 @@ let totalAmount = 0;
 expenseform.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const discription = document.getElementById("discription").value;
+  const description = document.getElementById("description").value;
   const category = document.getElementById("category").value;
   const amount = parseFloat(document.getElementById("amount").value);
 
-  if (discription && category &&!isNaN(amount)) {
+  if (description && category && !isNaN(amount)) {
     const row = document.createElement('tr');
 
     const formattedAmount = formatIndianCurrency(amount); // format the amount with Indian currency commas
-    row.innerHTML = `<td>${discription}</td>
+    row.innerHTML = `<td>${description}</td>
                      <td>${category}</td>
                      <td>${formattedAmount}</td>`;
 
@@ -25,7 +25,7 @@ expenseform.addEventListener('submit', function(event) {
     const formattedTotalAmount = formatIndianCurrency(totalAmount); // format the total amount with Indian currency commas
     totalAmountElement.textContent = `Total: ${formattedTotalAmount}`;
 
-    document.getElementById("discription").value = '';
+    document.getElementById("description").value = '';
     document.getElementById("category").value = '';
     document.getElementById("amount").value = '';
   } else {
